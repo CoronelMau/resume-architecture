@@ -79,7 +79,7 @@ color: #4a5b6a;
 `
 
 const items = [
-  { id: 1, href: "https://drive.google.com/file/d/1xVuM7k4QiFpDmLgVJnHZVWhp97fnvJna/view?usp=sharing", name: "Curriculum" },
+  { id: 1, href: "https://drive.google.com/file/d/125YtMJKT3V8xQs3bhlpny5IINu5G6wVR/view?usp=sharing", name: "Curriculum" },
   { id: 2, href: "https://drive.google.com/file/d/1fQchHdjx5AyltRSG4McSIvCF3Ycmk5UW/view?usp=sharing", name: "Portafolio" },
   { id: 3, href: "https://www.instagram.com/m.coronel/", name: "Instagram" },
   { id: 4, href: "https://www.linkedin.com/in/mauricio-coronel/", name: "LinkedIn" },
