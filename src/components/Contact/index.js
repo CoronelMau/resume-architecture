@@ -114,6 +114,7 @@ const Contact = () => {
         />
 
         <TextField
+        required
           name = "message"
           id="outlined-multiline-static"
           label="Mensaje"
