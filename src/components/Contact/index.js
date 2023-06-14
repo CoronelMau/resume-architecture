@@ -3,6 +3,8 @@ import { useState } from "react";
 import TextField from '@mui/material/TextField';
 import Button from "@mui/material/Button"
 import { validName, validEmail, validSubject } from "./validation";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Section = styled.section`
 margin-top: 3rem;
@@ -36,14 +38,17 @@ padding-bottom: 1rem;
 
 const Contact = () => {
 
+  const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(name.value);
-    console.log(email.value);
-    console.log(subject.value);
-    console.log(observation.value);
+
+    emailjs.sendForm('service_iobo0lm', 'template_aky01jt', form.current, 'I8gqrUo4jzFM1SqQH')
+    e.target.reset();
+    alert("Mensaje enviado");
   };
 
+  
   //UseState
   const [name, setName] = useState({ value: "", valid: true });
   const [email, setEmail] = useState({ value: "", valid: true });
@@ -53,11 +58,12 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-      <Form onSubmit={sendEmail}>
+      <Form ref = {form} onSubmit={sendEmail}>
         <Title>Contacto </Title>
-        <Text>Llena los siguientes campos y me pondré en contancto contigo. </Text>
+        <Text>¡Llena los siguientes campos y me pondré en contancto contigo! </Text>
 
         <TextField
+          name="user_name"
           fullWidth
           label="Nombre"
           variant="filled"
@@ -74,6 +80,7 @@ const Contact = () => {
         />
 
         <TextField
+          name = "user_email"
           fullWidth
           label="Email"
           variant="filled"
@@ -90,6 +97,7 @@ const Contact = () => {
         />
 
         <TextField
+          name = "subject"
           fullWidth
           label="Asunto"
           variant="filled"
@@ -106,6 +114,7 @@ const Contact = () => {
         />
 
         <TextField
+          name = "message"
           id="outlined-multiline-static"
           label="Mensaje"
           multiline
@@ -115,9 +124,8 @@ const Contact = () => {
           margin="normal"
           onChange={(input) => setObservation({ value: input.target.value, valid: true })}
         />
-        <Button type="submit" variant="contained"
-          href="mailto:8mau.coronel@gmail.com">
-          Enviar Email
+        <Button type="submit" variant="contained" value = "Send">
+          Enviar
         </Button>
       </Form>
     </Section>

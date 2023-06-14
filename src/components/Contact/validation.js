@@ -15,7 +15,7 @@ export const validEmail = (email) => {
 }
 
 export const validSubject = (subject) => {
-  if (subject.length > 8 && subject.length < 50) {
+  if (subject.length > 5 && subject.length < 50) {
     return true;
   } else {
     return false;
