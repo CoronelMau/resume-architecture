@@ -47,16 +47,16 @@ font-size: 1.2rem;
 `
 
 const ListEducation = [
-  { id: 1, img: "../../img/unam.png", name: "Architecture Career", year: "2018 - Present" },
-  { id: 2, img: "../../img/enp5.png", name: "Technical Programmer", year: "2016 - 2018" },
-  { id: 3, img: "../../img/conamat-1.png", name: "Mathematics Diploma", year: "2017-2018" },
-  { id: 4, img: "../../img/alura.png", name: "Front-End Dev", year: "2022-2023" },
+  { id: 1, img: "../../img/unam.png", name: "Arquitectura", year: "2018 - Actualmente" },
+  { id: 2, img: "../../img/enp5.png", name: "Técnico en Programación", year: "2016 - 2018" },
+  { id: 3, img: "../../img/conamat-1.png", name: "Diploma de Matemáticas", year: "2017-2018" },
+  { id: 4, img: "../../img/alura.png", name: "Desarrollador WEB", year: "2022-2023" },
 ]
 
 const Education = () => {
   return (
     <Section id="education">
-      <Title>Education</Title>
+      <Title>Educación</Title>
       <Schools>
         {ListEducation.map(({ id, img, name, year }) =>
           <SchoolCard id={id}><SchoolImg src={img} /><SchoolName>{name}</SchoolName>{year}</SchoolCard>)}

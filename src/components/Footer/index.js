@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <Section>
       <Logo src="../../img/Logo.png" alt="Coronel Logo" />
-      <h1>Created by <Important>Mauricio Coronel</Important></h1>
+      <h1>Creado por <Important>Mauricio Coronel</Important></h1>
       <h2>2023</h2>
     </Section>
   );

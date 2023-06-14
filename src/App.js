@@ -51,8 +51,10 @@ display: flex;
 justify-content: space-evenly;
 `
 
-const ContactEmail = styled.li`
+const ContactEmail = styled.a`
 font-weight: bold;
+color: #4a5b6a;
+text-decoration: none;
 `
 
 const navList = [
@@ -79,7 +81,7 @@ function App() {
               {navList.map(({ id, href, name }) =>
                 <Link className="navBar" smooth
                   to={href} id={id}>{name}</Link>)}
-              <ContactEmail>8mau.coronel@gmail.com</ContactEmail>
+              <ContactEmail href="mailto: 8mau.coronel@gmail.com">8mau.coronel@gmail.com</ContactEmail>
             </Ul>
           </Navigation>
         </StyledHeader>

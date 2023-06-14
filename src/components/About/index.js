@@ -90,9 +90,9 @@ const About = () => {
   return (
     <Section>
       <AboutMe>
-        <MainTitle>Hello! My name is Mauricio Coronel and I am a front-end developer</MainTitle>
-        <AboutText>I'm architect from profession, but software developer from passion. At the time I'm
-          learning programming in the Oracle ONE by Alura project.
+        <MainTitle>¡Hola, soy Mauricio Coronel!</MainTitle>
+        <AboutText>Acutalmente soy estudiante de Arquitectura en la UNAM, cursando mi último semestre en la carrera.
+          Con gran experiencia en el proceso proyectural y de renderizado.
         </AboutText>
         <SocialMedia>
           {items.map(({ id, name, href }) =>

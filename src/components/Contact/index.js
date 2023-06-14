@@ -54,13 +54,12 @@ const Contact = () => {
   return (
     <Section id="contact">
       <Form onSubmit={sendEmail}>
-        <Title>Contact </Title>
-        <Text>The form is only for demonstration, but you can
-          press the button to send an email and I will get in touch with you soon! </Text>
+        <Title>Contacto </Title>
+        <Text>Llena los siguientes campos y me pondré en contancto contigo. </Text>
 
         <TextField
           fullWidth
-          label="Name"
+          label="Nombre"
           variant="filled"
           margin="normal"
           required
@@ -92,7 +91,7 @@ const Contact = () => {
 
         <TextField
           fullWidth
-          label="Subject"
+          label="Asunto"
           variant="filled"
           margin="normal"
           required
@@ -108,7 +107,7 @@ const Contact = () => {
 
         <TextField
           id="outlined-multiline-static"
-          label="Message"
+          label="Mensaje"
           multiline
           rows={4}
           variant="filled"
@@ -118,7 +117,7 @@ const Contact = () => {
         />
         <Button type="submit" variant="contained"
           href="mailto:8mau.coronel@gmail.com">
-          Send Email
+          Enviar Email
         </Button>
       </Form>
     </Section>

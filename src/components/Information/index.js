@@ -51,14 +51,13 @@ const Information = () => {
   return (
     <AboutMeSection id="information">
       <Section>
-        <AboutMeHeader>About me</AboutMeHeader>
+        <AboutMeHeader>Sobre Mí</AboutMeHeader>
         <AboutMeText>
-          Hi! My name is <Important>Mauricio Coronel</Important>. I'm 23 years old, and currently living in Mexico City.
-          I'm a self-taught person in this world of programming, always wanting to learn more and more everyday.
+          ¡Hola! Soy <Important>Mauricio Coronel</Important>. Tengo 23 años, y actualmente vivo en la Ciudad de México.
         </AboutMeText>
         <AboutMeText>
-          I'm a very competitive person, who likes great challenges and does he's best in every single one of them.
-          Also, I do well with teams, trying to contribute and expecting to get something out of every project.
+          Me considero una persona muy competitiva, a quien le gustan los retos, dando lo mejor de mí para lograr el objetivo.
+          Soy bueno en trabajos en equipo, tratando de aportar y esperando sacar lo mejor de cada uno de ellos.
         </AboutMeText>
         <Signature src="../../img/signature.png" />
       </Section>
