@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Button from "@mui/material/Button"
-import Stack from "@mui/material/Stack";
 
 const Section = styled.section`
 `
@@ -50,58 +48,46 @@ padding-bottom: 0.5rem;
 const List = [
   {
     id: 1,
-    name: "Text Encrypter",
-    description: "Alura challenge",
-    img: "../../img/challenge.png",
-    repo: "https://github.com/CoronelMau/ChallengeEncriptador",
-    demo: "https://coronelmau.github.io/ChallengeEncriptador/"
+    name: "Four Leaves Villa",
+    description: "3Ds Max y Corona Render",
+    img: "../../img/four-leaves.jpg",
   },
   {
     id: 2,
-    name: "Mini Alura",
-    description: " Flex box practice",
-    img: "../../img/flex.png",
-    repo: "https://github.com/CoronelMau/Flex-Box",
-    demo: "https://coronelmau.github.io/Flex-Box/"
+    name: "Practica Photoshop",
+    description: "Sketchup y post producción en Photoshop",
+    img: "../../img/img-ps.jpg",
   },
   {
     id: 3,
-    name: "Apeperia",
-    description: "Responsive page practice",
-    img: "../../img/responsive.png",
-    repo: "https://github.com/CoronelMau/Responsive-Layout",
-    demo: "https://coronelmau.github.io/Responsive-Layout/"
+    name: "Restaurante",
+    description: "Rediseño de Restaurante, Hidalgo",
+    img: "../../img/restaurante.jpg",
   },
   {
     id: 4,
-    name: "Org",
-    description: "First react project",
-    img: "../../img/org.png",
-    repo: "https://github.com/CoronelMau/REACT-First-Practice",
-    demo: "https://coronelmau.github.io/REACT-First-Practice/"
+    name: "Iglesia",
+    description: "Rediseño de Iglesia, Michoacán",
+    img: "../../img/iglesia.jpg",
   },
   {
     id: 5,
-    name: "Smart Bank",
-    description: "First styled components practice",
-    img: "../../img/styled-components.png",
-    repo: "https://github.com/CoronelMau/styled-components",
-    demo: "https://styled-components-aphg7b4k0-coronelmau.vercel.app/"
+    name: "Hostal Zamala",
+    description: "Render Maqueta, Zempoala",
+    img: "../../img/maqueta2.jpg",
   },
   {
     id: 6,
-    name: "Alura Food",
-    description: "Hooks and MUI components practice",
-    img: "../../img/hooks.png",
-    repo: "https://github.com/CoronelMau/hooks-react",
-    demo: "https://coronelmau.github.io/hooks-react/"
+    name: "Sala de Exposiciones",
+    description: "Render Maqueta, rediseño en Palacio de los Deportes",
+    img: "../../img/maqueta1.png",
   },
 ];
 
 const Experience = () => {
   return (
     <Section id="projects">
-      <Title>Projects</Title>
+      <Title>Proyectos</Title>
 
       {List.map(({ id, name, description, img, repo, demo }) =>
         <ProjectCard id={id}>
@@ -109,10 +95,6 @@ const Experience = () => {
           <div>
             <ProjectTitle>{name}</ProjectTitle>
             <ProjectDesciption>{description}</ProjectDesciption>
-            <Stack spacing={1} direction="row">
-              <Button target="_blank" href={repo} variant="outlined">Repository</Button>
-              <Button target="_blank" href={demo} variant="contained">Demo</Button>
-            </Stack>
           </div>
         </ProjectCard>)}
     </Section>
